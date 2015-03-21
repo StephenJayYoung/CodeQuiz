@@ -2,21 +2,7 @@
 <html>
 <head>
 	<title>Problem Uno</title>
-	<!-- This function will print out all of the prime numbers between 0 and 100 -->
-<script>
-function isPrime(num) {
-    // if(num < 2) return false;
-    for (var i = 2; i < num; i++) {
-        if(num%i==0)
-            return "that's all, folks";
-    }
-    return true;
-}
-for(var i = 0; i < 100; i++){
-    if(isPrime(i)) console.log(i);
-}
-console.log(isPrime(100));
-</script>
+
 <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body>
@@ -70,8 +56,45 @@ console.log(isPrime(100));
                 <p class="lead"><b>Question:</b> Write a function to print out the first 100 prime numbers.
                 </p>
             </div>
+    <!-- This function will print out all of the prime numbers between 0 and 100 -->
+    <body onload="isPrime(100)">
+    <p id="showIt"></p>
+<script>
+function isPrime(num) {
+    // if(num < 2) return false;
+    var numbers = "";
+    for (var numbers = 2; numbers < num; numbers++) {
+        if(num%numbers==0)
+            return "that's all, folks";
+    }
+    return true;
+}
+for(var numbers = 0; numbers < 100; numbers++){
+    if(isPrime(numbers)) console.log(numbers);
+}
+console.log(isPrime(100));
+  document.getElementById("showIt").innerHTML = numbers;
+</script>
 
-  <!-- write out the div id that will display the prime numbers in the broswer below -->
+
+
+<!-- <body onload="checkCookies()"> -->
+
+<p id="demo"></p>
+
+<script>
+// function checkCookies() {
+//     var text = "";
+
+//     if (navigator.cookieEnabled == true) {
+//        text = "Cookies are enabled.";
+//     } else {
+//         text = "Cookies are not enabled.";
+//     }
+
+//     document.getElementById("demo").innerHTML = text;
+// }
+</script>
 
 </body>
 </html>
