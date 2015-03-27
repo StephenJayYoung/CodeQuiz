@@ -57,49 +57,27 @@
                 </p>
             </div>
     <!-- This function will print out all of the prime numbers between 0 and 100 -->
-    <body onload="isPrime(100)">
+  <!--   -->
  <!--    <div class= "text center">
     <p id="showIt"></p> -->
     <div class= "text center">
     <p id="showIt"></p>
     </div>
 <script>
-function isPrime(num) {
-    // if(num < 2) return false;
-    var numbers = "";
-    for (var numbers = 2; numbers < num; numbers++) {
-        if(num%numbers==0)
-            return "that's all, folks";
-    }
-    return true;
-}
-for(var numbers = 0; numbers < 100; numbers++){
-    if(isPrime(numbers)) console.log(numbers);
-}
-console.log(isPrime(100));
-  document.getElementById("showIt").innerHTML = numbers;
+for (var count = 0; count <= 100; count++) {
+
+  var notPrime = false;
+  for (var i = 2; i <= count; i++) {
+      if (count%i===0 && i!==count) {
+          notPrime = true;
+       }
+ }
+    if (notPrime === false) {
+               console.log(count);
+           }
+       }
 </script>
 
-
-
-<!-- <body onload="checkCookies()"> -->
-
-<p id="demo"></p>
-
-<script>
-// function checkCookies() {
-//     var text = "";
-
-//     if (navigator.cookieEnabled == true) {
-//        text = "Cookies are enabled.";
-//     } else {
-//         text = "Cookies are not enabled.";
-//     }
-
-//     document.getElementById("demo").innerHTML = text;
-// }
->>>>>>> parent of d38d189... fixed function
-</script>
 
 
 
