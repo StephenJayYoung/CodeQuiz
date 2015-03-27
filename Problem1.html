@@ -56,16 +56,14 @@
                 <p class="lead"><b>Question:</b> Write a function to print out the first 100 prime numbers.
                 </p>
             </div>
-    <!-- This function will print out all of the prime numbers between 0 and 100 -->
-  <!--   -->
- <!--    <div class= "text center">
-    <p id="showIt"></p> -->
-    <div class= "text center">
-    <p id="showIt"></p>
-    </div>
-<script>
-for (var count = 0; count <= 100; count++) {
 
+<!--     <button onclick="showPrimes"(); -->
+
+
+<script>
+
+var showPrimes = function() {
+for (var count = 0; count <= 100; count++) {
   var notPrime = false;
   for (var i = 2; i <= count; i++) {
       if (count%i===0 && i!==count) {
@@ -76,6 +74,8 @@ for (var count = 0; count <= 100; count++) {
                console.log(count);
            }
        }
+}
+
 </script>
 
 
