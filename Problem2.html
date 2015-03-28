@@ -61,25 +61,26 @@
 
 	<div class ="row-fluid">
 		<div class="span4 contentEditable">
-            <p contenteditable="true">
-			Squid bitters Etsy Tumblr, VHS letterpress gluten-free gentrify ugh deep v selvage disrupt cold-pressed. Butcher narwhal scenester Banksy selvage. Leggings typewriter cray pickled synth raw denim, roof party organic farm-to-table sartorial Banksy iPhone. Salvia Truffaut flexitarian, post-ironic vinyl meditation ennui freegan ugh readymade. Bespoke before they sold out church-key, quinoa gastropub paleo organic raw denim lomo. Twee  PBR&B, Helvetica skateboard artisan letterpress. VHS High Life mumblecore chia asymmetrical, blog yr Banksy.
+            <p contenteditable="true" id="change">
+			Squid bitters Etsy Tumblr, YOLO letterpress gluten-free gentrify ugh deep v selvage disrupt cold-pressed. Butcher narwhal scenester Banksy selvage. Leggings typewriter cray pickled synth raw denim, roof party organic farm-to-table sartorial Banksy iPhone. Salvia Truffaut flexitarian, post-ironic vinyl meditation ennui freegan ugh readymade. Bespoke before they sold out church-key, quinoa gastropub paleo organic raw denim lomo. Twee  PBR&B, Helvetica skateboard artisan letterpress. VHS High Life mumblecore chia asymmetrical, blog yr Banksy.
             </p>
-            <p contenteditable="true">
-			+1 Tumblr leggings taxidermy, tilde trust fund Kickstarter shabby chic retro four loko. Stumptown small batch typewriter asymmetrical viral squid. Pop-up listicle drinking vinegar Etsy salvia single-origin coffee Pinterest, pork belly ennui church-key keytar Austin. Heirloom Bushwick small batch pickled vinyl beard, Austin locavore you probably haven't heard of them. Migas flexitarian cardigan kale chips, Schlitz dreamcatcher Thundercats lomo cliche keytar slow-carb craft beer. Shabby chic actually Thundercats, jean shorts  semiotics whatever typewriter Tumblr. Pop-up brunch ennui tote bag, craft beer Helvetica wolf scenester iPhone VHS.
+            <p contenteditable="true" id="change">
+			+1 Tumblr leggings taxidermy, tilde trust fund Kickstarter shabby chic retro four loko. Stumptown small batch typewriter asymmetrical viral squid. Pop-up listicle drinking, YOLO, Etsy salvia single-origin coffee Pinterest, pork belly ennui church-key keytar Austin. Heirloom Bushwick small batch pickled vinyl beard, Austin locavore you probably haven't heard of them. Migas flexitarian cardigan kale chips, Schlitz dreamcatcher Thundercats lomo cliche keytar slow-carb craft beer. Shabby chic actually Thundercats, jean shorts  semiotics whatever typewriter Tumblr. Pop-up brunch ennui tote bag, craft beer Helvetica wolf scenester iPhone VHS.
 			</p>
-            <p contenteditable="true">
-			YOLO leggings Etsy, artisan flexitarian American Apparel Carles chillwave shabby chic sustainable PBR yr deep v cold-pressed. Letterpress small batch Marfa Pinterest, artisan Carles DIY yr tofu vegan occupy PBR&B. Keffiyeh Intelligentsia sriracha, beard before they sold out fixie +1 forage retro hoodie normcore Helvetica Thundercats tousled. Four dollar toast twee Neutra tofu trust fund, ethical readymade Bushwick listicle vinyl wolf sartorial banh mi scenester. Farm-to-table mixtape Pinterest, direct trade Bushwick American Apparel semiotics meditation irony Blue Bottle synth forage cray. Hella kale chips chillwave meh. Brooklyn yr put a bird on it, McSweeney's pop-up Bushwick cliche tilde retro post-ironic deep v forage.
+            <p contenteditable="true"id="change">
+			YOLO, leggings Etsy, artisan flexitarian American Apparel Carles chillwave shabby chic sustainable PBR yr deep v cold-pressed. Letterpress small batch Marfa Pinterest, artisan Carles DIY yr tofu vegan occupy PBR&B. Keffiyeh Intelligentsia sriracha, beard before they sold out fixie +1 forage retro hoodie normcore Helvetica Thundercats tousled. Four dollar toast twee Neutra tofu trust fund, ethical readymade Bushwick listicle vinyl wolf sartorial banh mi scenester. Farm-to-table mixtape Pinterest, direct trade Bushwick American Apparel semiotics meditation irony Blue Bottle synth forage cray. Hella kale chips chillwave meh. Brooklyn yr put a bird on it, McSweeney's pop-up Bushwick cliche tilde retro post-ironic deep v forage.
 			</p>
-            <p contenteditable="true">
-			Helvetica hoodie seitan beard chia pork belly, tofu small batch swag skateboard flexitarian biodiesel artisan Shoreditch heirloom. Street art craft beer YOLO health goth Shoreditch, Tumblr kogi Williamsburg butcher Godard. Mlkshk wolf keytar skateboard, American Apparel PBR&B kitsch church-key beard. Meh deep v normcore, yr tilde Kickstarter chambray viral. Keytar blog squid migas, church-key post-ironic PBR ugh tousled. Cardigan chia before they sold out, Williamsburg Schlitz pickled Vice viral authentic. Deep v messenger bag tofu, pork belly next level keytar authentic narwhal Blue Bottle meh.</p>
-			</div>
 	</div>
 </div>
 
 <script>
-//plan: write a function with an "if" statement that says: "If paragraph is contenteditable, change to blockquote." Create a button that does this.
 
-
+function changeToBlockquote() {
+    var str = document.getElementById("change").innerHTML;
+    var res = str.replace("YOLO", "HIII");
+    document.getElementById("change").innerHTML = res;
+}
+</script>
 </script>
 
 </body>
