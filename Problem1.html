@@ -56,25 +56,37 @@
                 <p class="lead"><b>Question:</b> Write a function to print out the first 100 prime numbers.
                 </p>
             </div>
+    <!-- This function will print out all of the prime numbers between 0 and 100 -->
+  <!--   -->
+ <!--    <div class= "text center">
+    <p id="showIt"></p> -->
 
-<!--     <button onclick="showPrimes"(); -->
+
+<p id ="showNumbers"</p>
 
 
 <script>
 
 var showPrimes = function() {
+    //Count the numbers between 0 and 100. Do not count past 100 (++ adds one to the variable, up to 100(so that we can count))
 for (var count = 0; count <= 100; count++) {
   var notPrime = false;
-  for (var i = 2; i <= count; i++) {
-      if (count%i===0 && i!==count) {
+  //count from 2 to 100. If the number being counted can be divided by 2 or any other number, and if that number is not equal to 2, then the number is not prime.
+  for (var number = 2; number <= count; number++) {
+      if (count%number===0 && number!==count) {
           notPrime = true;
        }
  }
+ //if the opposite is true, then that number is prime. Print thos numbers in the console.
     if (notPrime === false) {
                console.log(count);
            }
        }
 }
+//tag to print those numbers in the DOM
+document.getElementById("showNumbers").innerHTML = showPrimes(false);
+
+
 
 </script>
 
