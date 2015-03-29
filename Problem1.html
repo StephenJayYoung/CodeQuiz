@@ -74,10 +74,10 @@
 <script>
 
 var showPrimes = function() {
-    //Count the numbers between 0 and 100. Do not count past 100 (++ adds one to the variable, up to 100(so that we can count))
+    //Count the numbers between 1 and 100. Do not count past 100 (++ adds one to the variable, up to 100(so that we can count))
     for (var count = 1; count <= 100; count++) {
       var notPrime = false;
-      //count from 2 to 100. If the number being counted can be divided by 2 or any other number, and if that number is not equal to 2, then the number is not prime.
+      // If the number being counted can be divided by 2 or any other number, then the number is not prime.
       for (var number = 2; number <= count; number++) {
           if (count%number===0 && number!==count) {
               notPrime = true;
@@ -90,7 +90,7 @@ var showPrimes = function() {
         }
     }
 }
-//tag to print those numbers in the DOM
+//run the function
 showPrimes();
 
 
