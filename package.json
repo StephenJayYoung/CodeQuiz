@@ -15,5 +15,14 @@
   "bugs": {
     "url": "https://github.com/StephenJayYoung/CodeQuiz/issues"
   },
-  "homepage": "https://github.com/StephenJayYoung/CodeQuiz"
+  "homepage": "https://github.com/StephenJayYoung/CodeQuiz",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "chai": "^2.1.2"
+  },
+  "devDependencies": {
+    "mocha": "^2.2.1"
+  }
 }
