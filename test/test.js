@@ -9,7 +9,7 @@ describe('findSumPairs', function () {
     expect(findSumPairs).to.not.be.null;
   });
 
-  it.skip('should return the right values', function() {
+  it('should return the right values', function() {
 
     var arrayOfPairs = findSumPairs(intArr, sumTotal);
     var expectedArray = [ [ 1, 4 ], [ 2, 3 ] ];
