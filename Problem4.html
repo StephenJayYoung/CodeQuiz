@@ -5,6 +5,9 @@
 	<title>Problem Quatro</title>
 
 <link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/stylesheet.css" rel="stylesheet">
+<script src="Jquery.js"></script>
+
 </head>
 <body>
   <!-- Navigation -->
@@ -66,26 +69,42 @@
 						</p>
 					</div>
 
-<form name="form">
-VehicleType: <input type="text" name="carType" size="10"><br />
-Vehicle Weight: <input type="text" name="weight" size="10"><br />
-<input type="button" value="Calculate" onClick="calculateWeight()"><br />
-Total Weight: <input type="text" name="lbs" size="10"><br />
-<!-- This Means: <input type="text" name="meaning" size="25"><br /> -->
-<input type="reset" value="Reset" />
-</form>
+    <form class="car-form">
+        <select class="car-select">
+        </select>
+        <input type="text" class="weight-input">
+        <button type="submit" class="submit-button">Submit</button>
+        <div class="result"></div>
+    </form>
+
 
 <script>
-<!--
-function calculateWeight() {
-var weight = document.form.weight.value
-document.form.lbs.value = finalWeight
-}
-else{
-alert("Please Fill in everything correctly")
-}
-}
-//-->
+var CarTypes = {
+    SportsCar: 100,
+    FamilyCar: 300,
+    Truck: 1500,
+    MiniVan: 200,
+    CargoVan: 800
+};
+
+$(function(){
+    var sel = $(".car-select"),
+        input = $(".weight-input"),
+        button = $(".submit-button");
+
+    for(type in CarTypes){
+        sel.append(
+            $("<option>").val(CarTypes[type]).html(type)
+        )
+    }
+
+    $(".car-form").submit(function(e){
+        e.preventDefault();
+        $(".result").html(
+            input.val()
+        );
+    });
+});
 </script>
 
 </div>
