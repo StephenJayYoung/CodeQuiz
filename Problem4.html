@@ -66,30 +66,27 @@
 						</p>
 					</div>
 
-<div class ="row-fluid">
-  <div class="span4">
-    <div class="caption-full">
-      <p class="lead"> Vehicle Type</p>
-    <input type="text" id="num1" name="num1" />
-      <p class="lead">Cargo Weight (lbs)</p>
-<input type="text" id="num1" name="num1" />
-<br>
-<input type="button" value="Calculate" onclick="calc()" />
-<br>
-<br>
-</div>
-</div>
-</div>
+<form name="form">
+VehicleType: <input type="text" name="carType" size="10"><br />
+Vehicle Weight: <input type="text" name="weight" size="10"><br />
+<input type="button" value="Calculate" onClick="calculateWeight()"><br />
+Total Weight: <input type="text" name="lbs" size="10"><br />
+<!-- This Means: <input type="text" name="meaning" size="25"><br /> -->
+<input type="reset" value="Reset" />
+</form>
 
-<input type="text" id="op" name="op" />
-<br>
-<br>
-<input type="text" id="num2" name="num2" />
-<br>
-<input type="button" value="Calculate" onclick="calc()" />
-
-
-
+<script>
+<!--
+function calculateWeight() {
+var weight = document.form.weight.value
+document.form.lbs.value = finalWeight
+}
+else{
+alert("Please Fill in everything correctly")
+}
+}
+//-->
+</script>
 
 </div>
 </body>
